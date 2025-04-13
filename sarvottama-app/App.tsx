@@ -6,7 +6,7 @@ export default function App() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
-    fetch('http://192.168.29.231:3000') // Replace with your IPv4 address
+    fetch('https://sarvoapp-production.up.railway.app') // Replace with your IPv4 address
       .then(res => res.text())
       .then(setMessage)
       .catch(err => setMessage('Error: ' + err.message));
