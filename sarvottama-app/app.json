@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "sarvottama-app",
+    "name": "Sarvottama",
     "slug": "sarvottama-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo-512.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo-light-1000.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo-light-1000.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.akshu4116.sarvottamaapp",
@@ -34,6 +34,12 @@
       "eas": {
         "projectId": "8b46d83d-af3d-4522-b3bc-8ab3aa77fa3f"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/8b46d83d-af3d-4522-b3bc-8ab3aa77fa3f"
     }
   }
 }

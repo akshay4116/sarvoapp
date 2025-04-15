@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useEffect, useState } from 'react';
+import { API_URL } from '@env';
 
 export default function App() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
-    fetch('https://sarvoapp-production.up.railway.app') // Replace with your IPv4 address
+    //fetch('https://sarvoapp-production.up.railway.app') // Replace with your IPv4 address
+    fetch(API_URL)
       .then(res => res.text())
       .then(setMessage)
       .catch(err => setMessage('Error: ' + err.message));
