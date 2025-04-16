@@ -4,7 +4,7 @@
     "slug": "sarvottama-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo-512.png",
+    "icon": "./assets/logo-1024.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo-light-1000.png",
+        "foregroundImage": "./assets/logo-1024.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.akshu4116.sarvottamaapp",
