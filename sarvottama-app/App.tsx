@@ -7,6 +7,7 @@ export default function App() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
+    console.log('Calling API:', API_URL);
     //fetch('https://sarvoapp-production.up.railway.app') // Replace with your IPv4 address
     fetch(API_URL)
       .then(res => res.text())

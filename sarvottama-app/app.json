@@ -24,7 +24,7 @@
       "permissions": [],
       "intentFilters": [],
       "config": {
-        "usesCleartextTraffic": true
+        "usesCleartextTraffic": false
       }
     },
     "web": {
