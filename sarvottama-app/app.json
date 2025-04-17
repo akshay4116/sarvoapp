@@ -24,7 +24,8 @@
       "permissions": [],
       "intentFilters": [],
       "config": {
-        "usesCleartextTraffic": false
+        "usesCleartextTraffic": false,
+        "networkSecurityConfig": "./network_security_config.xml"
       }
     },
     "web": {

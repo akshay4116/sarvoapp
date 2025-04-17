@@ -7,13 +7,22 @@ export default function App() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
-    console.log('Calling API:', API_URL);
-    //fetch('https://sarvoapp-production.up.railway.app') // Replace with your IPv4 address
-    fetch(API_URL)
-      .then(res => res.text())
-      .then(setMessage)
-      .catch(err => setMessage('Error: ' + err.message));
+    const callAPI = async () => {
+      try {
+        console.log('📡 Calling API:', API_URL);
+        const response = await fetch(API_URL);
+        const text = await response.text();
+        console.log('✅ Response:', text);
+        setMessage(text);
+      } catch (err: any) {
+        console.log('❌ Fetch failed:', err);
+        setMessage('Error: ' + err.message + '\n' + JSON.stringify(err));
+      }
+    };
+
+    callAPI();
   }, []);
+
 
   return (
     <View style={styles.container}>

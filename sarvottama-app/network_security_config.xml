@@ -1,0 +1,6 @@
+<!-- network_security_config.xml -->
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="false">
+    <domain includeSubdomains="true">sarvoapp-production.up.railway.app</domain>
+  </domain-config>
+</network-security-config>
